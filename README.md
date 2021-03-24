@@ -4,7 +4,7 @@ Given a list of 2D integer points in a Manhattan grid, return the list of points
 
 The script `generate_points.py` generates random 2D points saved in `data/` with the format `data_<Np>_<N>x<M>.txt` where `Np` is the number of points, `N` is the size of the x dimention and `M` is the size of the y dimention. 
 
-The script `2d_neighbors.py` takes as arguments the input file and the distance `dist` and generates an output file with the name `data_<Np>_<N>x<M>_d<dist>_result.txt`
+The script `2d_neighbors.py` takes as arguments the input file and the distance of `2 x dist` and generates an output file with the name `data_<Np>_<N>x<M>_d<dist>_result.txt`
 
 ## Example
 
