@@ -1,4 +1,5 @@
 import sys
+import heapq
 
 class Point(object):
     def __init__(self,x,y):
@@ -13,23 +14,17 @@ class Point(object):
 class PriorityQueue(object):
     def __init__(self):
         self.queue = []
+        self.index = 0
     
     def is_empty(self):
         return len(self.queue) == 0
 
     def push(self,elem,metric):
-        for i in range(len(self.queue)):
-            if metric(elem) <= metric(self.queue[i]):
-                self.queue.insert(i,elem)
-                return None
-        self.queue.append(elem)
-        return None
+        heapq.heappush(self.queue, (metric, self.index, elem))
+        self.index += 1
 
     def pop(self):
-        return self.queue.pop(0)
-    
-    def flush(self):
-        self.queue = []
+        return heapq.heappop(self.queue)[-1]
 
     def __repr__(self):
         return self.queue.__repr__()
@@ -48,7 +43,7 @@ def main():
     f = open(file,"r")
     for l in f:
         x , y = l.split(" ", maxsplit=1)
-        pq.push(Point(int(x),int(y)),lambda p: p.x)
+        pq.push(Point(int(x),int(y)),int(x))
     
     print('Total number of points: {}'.format(len(pq)))
 
@@ -59,8 +54,8 @@ def main():
         p1 = pq.pop()
         if p1.x - p0.x <= dist:
             if pq_temp.is_empty():
-                pq_temp.push(p0,lambda p: p.y)
-            pq_temp.push(p1,lambda p: p.y)
+                pq_temp.push(p0,p0.y)
+            pq_temp.push(p1,p1.y)
         else:
             if len(pq_temp) >= 2:
                 bands.append(pq_temp)

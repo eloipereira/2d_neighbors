@@ -20,4 +20,4 @@ The result is saved at `data/data_12_1000x1000_d1_result.txt`.
 
 The algorithm for finding neighbors takes advantage of the Priority Queue (PQ) data structure. 
 
-First, the data is first pushed into a PQ taking the `x` component as the metric. Next, all the elements are popped forming bands of elements within `dist` in the x dimention. The bands are also PQs but now taking `y` as the metric. At last each band is popped and elements within `dist` in the y dimention are stored in the result file. 
+First, the data is first pushed into a PQ taking the `x` component as the metric. Next, all the elements are popped forming bands of elements within `dist` in the x dimention. The bands are also PQs but now taking `y` as the metric. At last each band is popped and elements within `dist` in the y dimention are stored in the result file. The priority queue is implemented using a heap queue. 
