@@ -70,8 +70,6 @@ def main():
     if len(pq_temp) >= 2:
         bands.append(pq_temp)
 
-    # print(bands)
-
     neighboors = []
 
     for b in bands:
