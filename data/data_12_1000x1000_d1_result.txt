@@ -1,4 +1,1 @@
-21 42
-20 43
-1000 998
-1001 999
+12 processed in 0.0002181529998779297 sec. 0 points have neighboors at d<=1

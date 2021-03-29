@@ -1,2 +1,3 @@
-31344 14064
 31343 14065
+31344 14064
+10000 processed in 0.15953636169433594 sec. 2 points have neighboors at d<=2

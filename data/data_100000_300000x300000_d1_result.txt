@@ -1,2 +1,3 @@
-65804 76479
 65805 76479
+65804 76479
+100000 processed in 2.3486454486846924 sec. 2 points have neighboors at d<=1

@@ -1,0 +1,4 @@
+149 2
+150 1
+150 2
+19 processed in 0.0003845691680908203 sec. 3 points have neighboors at d<=1
