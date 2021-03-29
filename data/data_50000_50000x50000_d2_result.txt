@@ -11,4 +11,4 @@
 42737 31162
 7700 44619
 16178 38562
-50000 processed in 1.2214879989624023 sec. 13 points have neighboors at d<=2
+50000 processed in 1.2161128520965576 sec. 13 points have neighboors at d<=2

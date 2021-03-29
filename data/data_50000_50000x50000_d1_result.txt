@@ -5,4 +5,4 @@
 25181 48530
 27035 7379
 16178 38562
-50000 processed in 1.249866247177124 sec. 7 points have neighboors at d<=1
+50000 processed in 1.2194349765777588 sec. 7 points have neighboors at d<=1
